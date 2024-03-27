@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar 27 14:38:40 2024
+# Process ID: 2900
+# Current directory: C:/Users/matahir/Desktop/lab_3_hw
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1924 C:\Users\matahir\Desktop\lab_3_hw\lab_3_hw.xpr
+# Log file: C:/Users/matahir/Desktop/lab_3_hw/vivado.log
+# Journal file: C:/Users/matahir/Desktop/lab_3_hw\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ecetech/Desktop/lab_3_final.xpr/pmod_oled/.Xil/Vivado-16224-TECH-C98I8JRGUQ/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.ipdefs/vivado-library-v2019.1-1_0_0_0_0_0_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 738.125 ; gain = 114.711
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar 27 14:39:29 2024] Launched synth_1...
+Run output will be captured here: C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.runs/synth_1/runme.log
+[Wed Mar 27 14:39:30 2024] Launched impl_1...
+Run output will be captured here: C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.473 . Memory (MB): peak = 1665.051 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.473 . Memory (MB): peak = 1665.051 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1665.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1777.543 ; gain = 1002.984
+file copy -force C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.runs/impl_1/design_test_wrapper.sysdef C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.sdk/design_test_wrapper.hdf
+
+launch_sdk -workspace C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.sdk -hwspec C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.sdk/design_test_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.sdk -hwspec C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.sdk/design_test_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

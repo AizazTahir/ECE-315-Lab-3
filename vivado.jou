@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Mar 27 14:38:40 2024
+# Process ID: 2900
+# Current directory: C:/Users/matahir/Desktop/lab_3_hw
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1924 C:\Users\matahir\Desktop\lab_3_hw\lab_3_hw.xpr
+# Log file: C:/Users/matahir/Desktop/lab_3_hw/vivado.log
+# Journal file: C:/Users/matahir/Desktop/lab_3_hw\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+file copy -force C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.runs/impl_1/design_test_wrapper.sysdef C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.sdk/design_test_wrapper.hdf
+
+launch_sdk -workspace C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.sdk -hwspec C:/Users/matahir/Desktop/lab_3_hw/lab_3_hw.sdk/design_test_wrapper.hdf
